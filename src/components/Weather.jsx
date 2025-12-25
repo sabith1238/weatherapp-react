@@ -12,7 +12,7 @@ export default function Weather({query, setQuery, search, weatherData}) {
 
 
     const fetchData = (value) => {
-        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=5&appid=b28e97b39fdbf9b6ed1ade27e0423259`)
+        fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=5&appid=b28e97b39fdbf9b6ed1ade27e0423259`)
             .then(res => res.json())
             .then((json) => {
                 console.log(json)
